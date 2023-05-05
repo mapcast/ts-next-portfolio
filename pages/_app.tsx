@@ -14,8 +14,17 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <main>
         <SideNav/>
-        <Component {...pageProps} />
+        <div className="content-wrap">
+          <Component {...pageProps} />
+        </div>
       </main>
+      <style jsx>{`
+        .content-wrap {
+          padding-left: 19rem;
+          width: 95rem;
+          height: 98vh;
+        }
+      `}</style>
     </>
   )
   

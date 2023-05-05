@@ -26,12 +26,12 @@ export default function SideNav() {
                 <div className={classNames("side-menu-category",  gugi.className)}>프로필</div>
             </li>
             <li>
-                <Link href="/profile" legacyBehavior>
+                <Link href="/profile/info" legacyBehavior>
                     <a className={bhs.className}>경력</a>
                 </Link>
             </li>
             <li>
-                <Link href="/skills" legacyBehavior>
+                <Link href="/profile/skills" legacyBehavior>
                     <a className={bhs.className}>기술</a>
                 </Link>
             </li>
