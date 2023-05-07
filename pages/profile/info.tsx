@@ -1,4 +1,4 @@
-import { Sunflower, Jua, Do_Hyeon } from "next/font/google";
+import { Sunflower, Do_Hyeon } from "next/font/google";
 
 const sunflower = Sunflower({
   subsets: ["latin"], 
