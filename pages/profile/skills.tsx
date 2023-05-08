@@ -9,6 +9,9 @@ import rust from "../../public/rust.png";
 import kafka from "../../public/kafka.png";
 import elasticsearch from "../../public/elasticsearch.png";
 import cloud from "../../public/cloud.png";
+
+import { SkillFlex } from "../../components/skill_flex.tsx";
+
 import { useState } from 'react';
 
 const dohyeon = Do_Hyeon({
