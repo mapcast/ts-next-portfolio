@@ -1,4 +1,6 @@
-function SkillItem({ skill: any, setModalIsOpen: any, setModalContent: any }) {
+import { Skill } from "./skill.tsx";
+
+function SkillItem({ skill: Skill, setModalIsOpen: any, setModalContent: any }) {
     return (
         <div className="skills-item-wrap">
             <div className="skills-item" onClick={() => {
