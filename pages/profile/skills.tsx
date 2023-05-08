@@ -45,6 +45,33 @@ const modal_style = {
 	},
 };
 
+const skills = [
+    Skill(
+    	<></>
+    , java.src, "60%", "60%"),
+    Skill(
+    	<></>
+    , springboot.src, "60%", "35%"),
+    Skill(
+    	<></>
+    , reacticon.src, "55%", "60%"),
+    Skill(
+    	<></>
+    , sql.src, "45%", "60%"),
+    Skill(
+    	<></>
+    , rust.src, "60%", "30%"),
+    Skill(
+    	<></>
+    , kafka.src, "60%", "35%"),
+    Skill(
+    	<></>
+    , elasticsearch.src, "80%", "20%"),
+    Skill(
+    	<></>
+    , cloud.src, "60%", "50%"),
+];
+
 export default function Skills() {
 
     const [modalIsOpen, setModalIsOpen] = useState(true);
