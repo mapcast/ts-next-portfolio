@@ -143,6 +143,7 @@ export default function Skills() {
                 .skills-flex-horizontal {
                     margin-top: 60px;
                     display: flex;
+		    flex-wrap: wrap;
                     width: 100%;
                     height: 33.3%;
                 }
