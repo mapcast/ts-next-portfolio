@@ -1,10 +1,12 @@
 export default class Skill {
-    _modal_content: string;
+    _id: number;
+    _modal_content: JSX.Element;
     _file_src: string;
     _img_width: string;
     _img_height: string;
     
-    constructor(_modal_content: string, _file_src: string, _img_width: string, _img_height: string) {
+    constructor(_id: number, _modal_content: JSX.Element, _file_src: string, _img_width: string, _img_height: string) {
+        this._id = _id;
         this._modal_content = _modal_content;
         this._file_src = _file_src;
         this._img_width = _img_width;
@@ -23,6 +25,9 @@ export default class Skill {
     set img_height(value) {
         this._img_height = value;
     }
+    set id(value) {
+        this.id = value;
+    }
 
     get modal_content() {
         return this._modal_content;
@@ -35,5 +40,8 @@ export default class Skill {
     }
     get img_height() {
         return this._img_height;
+    }
+    get id() {
+        return this._id;
     }
 }

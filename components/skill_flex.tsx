@@ -1,20 +1,23 @@
-import { Skill } from "./skill.tsx";
 
-function SkillItem({ skill: Skill, setModalIsOpen: any, setModalContent: any }) {
+import { Dispatch, SetStateAction } from "react";
+import Skill from "./skill";
+
+function SkillItem({ skill, setModalIsOpen, setModalContent }: {skill: Skill, setModalIsOpen: Dispatch<SetStateAction<boolean>>, setModalContent: Dispatch<SetStateAction<JSX.Element>>}) {
     return (
         <>
             <div className="skills-item-wrap">
                 <div className="skills-item" onClick={() => {
                     setModalIsOpen(true);
-                    setModalContent(skill.modalContent);
+                    setModalContent(skill.modal_content);
                 }}>
-                    <img src={skill.filesrc} width={skill.img_width} height={skill.img_height}/>
+                    <img src={skill.file_src} width={skill.img_width} height={skill.img_height}/>
                 </div>
             </div>
-            <style jsx>
+            <style jsx>{`
                 .skills-item-wrap {
-                    width:25%;
-                    padding: 2% 5%;
+                    width:19%;
+                    height: 40%;
+                    padding: 1% 3%;
                 }
                 .skills-item {
                     border: 1px solid #AAA;
@@ -34,28 +37,28 @@ function SkillItem({ skill: Skill, setModalIsOpen: any, setModalContent: any }) 
                     left: 50%;
                     transform: translate(-50%, -50%);
                 }
-            </style>
+            `}</style>
         </>
+        
     );
 }
 
 
-export default function SkillFlex({ skills: any, setModalIsOpen: any, setModalContent: any }) {
-    
+export default function SkillFlex({ skills, setModalIsOpen, setModalContent }: {skills: Skill[], setModalIsOpen: Dispatch<SetStateAction<boolean>>, setModalContent: Dispatch<SetStateAction<JSX.Element>>}) {
     return (
         <>
-            <div>
-                {skills.map((skill) => SkillItem(skill, setModalIsOpen, setModalContent))};
+            <div className="skills-flex">
+                {skills.map((skill) => <SkillItem key={skill.id} skill={skill} setModalIsOpen={setModalIsOpen} setModalContent={setModalContent}/>)}
             </div>
-            <style jsx>
-                div {
-                    margin-top: 60px;
+            <style jsx>{`
+                .skills-flex {
+                    margin-top: 30px;
                     display: flex;
                     flex-wrap: wrap;
                     width: 100%;
-                    height: 33.3%;
+                    height: 80%;
                 }
-            </style>
+            `}</style>
         </>
     );
 }
