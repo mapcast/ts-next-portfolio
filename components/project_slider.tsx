@@ -1,6 +1,8 @@
 //https://stackoverflow.com/questions/69287823/react-slick-compatibility-with-nextjs 참조 필요
 
 import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const settings = {
 dots: true,
