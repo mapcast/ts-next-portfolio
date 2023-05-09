@@ -1,6 +1,6 @@
 
 import { Dispatch, SetStateAction } from "react";
-import Skill from "./skill";
+import Skill from "../classes/skill";
 
 function SkillItem({ skill, setModalIsOpen, setModalContent }: {skill: Skill, setModalIsOpen: Dispatch<SetStateAction<boolean>>, setModalContent: Dispatch<SetStateAction<JSX.Element>>}) {
     return (
