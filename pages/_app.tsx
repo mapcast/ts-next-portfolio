@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </main>
       <style jsx>{`
         .content-wrap {
-          padding-left: 19rem;
+          padding-left: 18rem;
           width: 95rem;
           height: 98vh;
         }

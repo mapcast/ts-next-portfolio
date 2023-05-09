@@ -13,7 +13,7 @@ const dohyeon = Do_Hyeon({
 export default function Info() {
   return (
     <div>
-      <h1 className={sunflower.className}>조<font color="#bd5d38">현승</font></h1>
+      <h1 className={sunflower.className}>조<span className="h1-emp">현승</span></h1>
       <span className={sunflower.className}>010-6851-7574 · qlqldyd54321@gmail.com</span>
       <p className={dohyeon.className}>
       	2013-03 ~ 2019-02 동의대학교 재학 (주전공: 정보통신공학, 부전공: 일어일문)
@@ -35,6 +35,10 @@ export default function Info() {
           margin-top: 0;
           margin-bottom: 0.5rem;
           line-height: 1.2;
+        }
+
+        .h1-emp {
+          color: #bd5d38;
         }
 
         span {

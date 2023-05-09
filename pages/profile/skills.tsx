@@ -20,7 +20,7 @@ const dohyeon = Do_Hyeon({
     weight: ["400"],
 });
 
-const modal_style = {
+const modal_style: any = {
 	overlay: {
 		position: "fixed",
 		top: 0,
@@ -219,6 +219,7 @@ export default function Skills() {
                     height: 87%;
                     padding: 4% 5%;
                 }
+
             `}</style>
         </>
     )

@@ -36,12 +36,7 @@ export default function SideNav() {
                 </Link>
             </li>
             <li>
-                <div className={classNames("side-menu-category",  gugi.className)}>프로젝트</div>
-            </li>
-            <li>
-                <Link href="/project/seekers" legacyBehavior>
-                    <a className={bhs.className}>Seekers</a>
-                </Link>
+                <div className={classNames("side-menu-category",  gugi.className)}>사이드 프로젝트</div>
             </li>
             <li>
                 <Link href="/project/side" legacyBehavior>
