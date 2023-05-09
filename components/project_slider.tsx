@@ -1,3 +1,5 @@
+//https://stackoverflow.com/questions/69287823/react-slick-compatibility-with-nextjs 참조 필요
+
 import Slider from "react-slick";
 
 const settings = {
