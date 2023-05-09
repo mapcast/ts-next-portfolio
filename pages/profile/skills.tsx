@@ -11,7 +11,7 @@ import elasticsearch from "../../public/elasticsearch.png";
 import cloud from "../../public/cloud.png";
 
 import SkillFlex from "../../components/skill_flex";
-import Skill from "../../components/skill";
+import Skill from "../../classes/skill";
 
 import { useState } from 'react';
 
