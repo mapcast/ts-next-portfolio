@@ -9,6 +9,11 @@ const nextConfig = {
         destination: '/profile/info',
         permanent: true,
       },
+      {
+        source: '/ts-next-portfolio',
+        destination: '/ts-next-portfolio/profile/info',
+        permanent: true,
+      },
     ];
   },
 }

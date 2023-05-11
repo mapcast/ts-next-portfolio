@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { Sunflower, Do_Hyeon } from "next/font/google";
 
 const sunflower = Sunflower({
@@ -14,7 +15,7 @@ export default function Info() {
   return (
     <div>
       <h1 className={sunflower.className}>조<span className="h1-emp">현승</span></h1>
-      <span className={sunflower.className}>010-6851-7574 · qlqldyd54321@gmail.com</span>
+      <span className={classNames(sunflower.className, 'phone-email')}>010-6851-7574 · qlqldyd54321@gmail.com</span>
       <p className={dohyeon.className}>
       	2013-03 ~ 2019-02 동의대학교 재학 (주전공: 정보통신공학, 부전공: 일어일문)
       	<br/>
@@ -22,11 +23,13 @@ export default function Info() {
       	<br/>
         2020-08 ~ 현재 - Seekers Inc. 재직중
       </p>
+      <br/>
+      <span className={classNames(sunflower.className)}>※해당 페이지는 1920x1080 해상도에서 정상 작동합니다.</span>
       <style jsx>{`
 
         div {
-          padding-top: 22%;
-          padding-left: 3%;
+          padding-top: 19%;
+          padding-left: 5%;
         }
 
         h1 {
@@ -41,7 +44,7 @@ export default function Info() {
           color: #bd5d38;
         }
 
-        span {
+        .phone-email {
           color: rgb(102, 102, 102);
           font-size: 1.5rem;
         }
