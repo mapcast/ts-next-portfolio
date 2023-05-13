@@ -26,12 +26,12 @@ export default function SideNav() {
                 <div className={classNames("side-menu-category",  gugi.className)}>프로필</div>
             </li>
             <li>
-                <Link href="/profile/info" legacyBehavior>
+                <Link href="/" legacyBehavior>
                     <a className={bhs.className}>경력</a>
                 </Link>
             </li>
             <li>
-                <Link href="/profile/skills" legacyBehavior>
+                <Link href="/skills" legacyBehavior>
                     <a className={bhs.className}>기술</a>
                 </Link>
             </li>
@@ -39,8 +39,28 @@ export default function SideNav() {
                 <div className={classNames("side-menu-category",  gugi.className)}>사이드 프로젝트</div>
             </li>
             <li>
-                <Link href="/project/side" legacyBehavior>
-                    <a className={bhs.className}>사이드 프로젝트</a>
+                <Link href="/projects/#scraper" legacyBehavior>
+                    <a className={bhs.className}>법원경매 스크래퍼</a>
+                </Link>
+            </li>
+            <li>
+                <Link href="/projects/#chain" legacyBehavior>
+                    <a className={bhs.className}>Chain-Cho</a>
+                </Link>
+            </li>
+            <li>
+                <Link href="/projects/#blog" legacyBehavior>
+                    <a className={bhs.className}>개인 블로그</a>
+                </Link>
+            </li>
+            <li>
+                <Link href="/projects/#tutor" legacyBehavior>
+                    <a className={bhs.className}>과외커넥터</a>
+                </Link>
+            </li>
+            <li>
+                <Link href="/projects/#es" legacyBehavior>
+                    <a className={bhs.className}>ES-API</a>
                 </Link>
             </li>
         </ul>
@@ -113,6 +133,7 @@ export default function SideNav() {
             margin-bottom: 10px;
             font-size: 1.2rem;
             display: block;
+            cursor: default;
         }
 
         a {

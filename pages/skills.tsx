@@ -1,17 +1,17 @@
 import Modal from 'react-modal';
 import { Do_Hyeon } from "next/font/google";
 
-import springboot from "../../public/springboot.png";
-import reacticon from "../../public/react.png";
-import sql from "../../public/sql.png";
-import java from "../../public/java.png";
-import rust from "../../public/rust.png";
-import kafka from "../../public/kafka.png";
-import elasticsearch from "../../public/elasticsearch.png";
-import cloud from "../../public/cloud.png";
+import springboot from "../public/springboot.png";
+import reacticon from "../public/react.png";
+import sql from "../public/sql.png";
+import java from "../public/java.png";
+import rust from "../public/rust.png";
+import kafka from "../public/kafka.png";
+import elasticsearch from "../public/elasticsearch.png";
+import cloud from "../public/cloud.png";
 
-import SkillFlex from "../../components/skill_flex";
-import Skill from "../../classes/skill";
+import SkillFlex from "../components/skill_flex";
+import Skill from "../classes/skill";
 
 import { useState } from 'react';
 
