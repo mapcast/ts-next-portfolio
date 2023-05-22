@@ -15,8 +15,8 @@ function SkillItem({ skill, setModalIsOpen, setModalContent }: {skill: Skill, se
             </div>
             <style jsx>{`
                 .skills-item-wrap {
-                    width:19%;
-                    height: 40%;
+                    width:10.6%;
+                    height: 23%;
                     padding: 1% 3%;
                 }
                 .skills-item {

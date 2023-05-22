@@ -9,7 +9,6 @@ import Postgres from "../public/psql.png";
 import Node from "../public/node.png";
 import JSP from "../public/jsp.png";
 import Mysql from "../public/mysql.png";
-import Next from "../public/next.png";
 import Elastic from "../public/elasticsearch.png";
 import Scraper1 from "../public/scraper1.png";
 
