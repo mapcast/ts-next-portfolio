@@ -12,6 +12,17 @@ import Mysql from "../public/mysql.png";
 import Elastic from "../public/elasticsearch.png";
 import Scraper1 from "../public/scraper1.png";
 
+import Blog1 from "../public/blog1.png";
+import Blog2 from "../public/blog2.png";
+import Blog3 from "../public/blog3.png";
+import Blog4 from "../public/blog4.png";
+
+import Connect1 from "../public/connect1.png";
+import Connect2 from "../public/connect2.png";
+import Connect3 from "../public/connect3.png";
+import Connect4 from "../public/connect4.png";
+import Connect5 from "../public/connect5.png";
+
 const sunflower = Sunflower({
     subsets: ["latin"], 
     weight: ["500"],
@@ -230,16 +241,16 @@ export default function SideProjects() {
                         <div className="upper-left">
                             <Carousel autoplay>
                                 <div>
-                                    <img src={Rust.src} style={contentStyle}></img>
+                                    <img src={Blog1.src} style={contentStyle}></img>
                                 </div>
                                 <div>
-                                    <h3 style={contentStyle}>2</h3>
+                                    <img src={Blog2.src} style={contentStyle}></img>
                                 </div>
                                 <div>
-                                    <h3 style={contentStyle}>3</h3>
+                                    <img src={Blog3.src} style={contentStyle}></img>
                                 </div>
                                 <div>
-                                    <h3 style={contentStyle}>4</h3>
+                                    <img src={Blog4.src} style={contentStyle}></img>
                                 </div>
                             </Carousel>
                         </div>
@@ -291,16 +302,19 @@ export default function SideProjects() {
                         <div className="upper-left">
                             <Carousel autoplay>
                                 <div>
-                                    <img src={Rust.src} style={contentStyle}></img>
+                                    <img src={Connect1.src} style={contentStyle}></img>
                                 </div>
                                 <div>
-                                    <h3 style={contentStyle}>2</h3>
+                                    <img src={Connect2.src} style={contentStyle}></img>
                                 </div>
                                 <div>
-                                    <h3 style={contentStyle}>3</h3>
+                                    <img src={Connect3.src} style={contentStyle}></img>
                                 </div>
                                 <div>
-                                    <h3 style={contentStyle}>4</h3>
+                                    <img src={Connect4.src} style={contentStyle}></img>
+                                </div>
+                                <div>
+                                    <img src={Connect5.src} style={contentStyle}></img>
                                 </div>
                             </Carousel>
                         </div>
