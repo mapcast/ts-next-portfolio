@@ -8,10 +8,23 @@ import javascript from "../public/javascript.png";
 import rust from "../public/rust.png";
 import elasticsearch from "../public/elasticsearch.png";
 
+import database from "../public/database.png";
+import typescript from "../public/typescript.png";
+import reactredux from "../public/reactredux.png";
+import jquery from "../public/jquery.png";
+import thymeleaf from "../public/thymeleaf.png";
+import htmlcss from "../public/htmlcss.png";
+import aws from "../public/aws.png";
+import azure from "../public/azure.png";
+import psql from "../public/psql.png";
+import mysql from "../public/mysql.png";
+import mssql from "../public/mssql.png";
+
 import SkillFlex from "../components/skill_flex";
 import Skill from "../classes/skill";
 
 import { useState } from 'react';
+import SkillSummary from '@/components/skill_summary';
 
 const dohyeon = Do_Hyeon({
     subsets: ["latin"], 
@@ -44,7 +57,7 @@ const modal_style: any = {
 	},
 };
 
-const skills = [
+const skills: Skill[] = [
     new Skill(1,
         <> 
             <h3>Java</h3>
@@ -121,7 +134,7 @@ const skills = [
         javascript.src, "55%", "60%"),
     new Skill(4,
         <>
-            <h3>RDB</h3>
+            <h3>DB</h3>
             <h5>사용 경험(React, Express)</h5>
             <br/>
             <h5>Postgre SQL</h5>
@@ -136,8 +149,12 @@ const skills = [
             <ul>
                 <li>실무 중 일부 외주 프로젝트에서 사용 경험 있음</li>
             </ul>
+            <h5>Elasticsearch</h5>
+            <ul>
+                <li>실무에서 많이 사용. 주로 RestHighLevelclient를 사용해서 관리했지만, RawQuery 작성도 가능.</li>
+            </ul>
         </>,
-        sql.src, "45%", "60%"),
+        database.src, "60%", "55%"),
     new Skill(5,
 	    <>
             <h3>Rust</h3>
@@ -166,17 +183,21 @@ const skills = [
             </ul>
         </>,
         rust.src, "60%", "30%"),
-    new Skill(7,
-        <>
-            <h3>Elasticsearch</h3>
-            <span>
-            주로 RestHighLevelclient를 사용해서 관리했지만, RawQuery 작성도 가능합니다.
-            <br/>
-            실무 사용 경험이 많기 때문에 기본적인 설정들에 대해 알고 있고, RawQuery와 RestHighLevelClient 양쪽에서 복잡한 집계쿼리나 Nested 조건검색 API 등을 작성 할 수 있습니다.
-            </span>
-        </>,
-        elasticsearch.src, "80%", "20%"),
 ]
+
+const icons: Skill[] = [
+    new Skill(1, <></>, jquery.src, "100%", "20%"),
+    new Skill(2, <></>, typescript.src, "70%", "70%"),
+    new Skill(3, <></>, reactredux.src, "100%", "35%"),
+    new Skill(4, <></>, htmlcss.src, "100%", "60%"),
+    new Skill(5, <></>, thymeleaf.src, "60%", "60%"),
+    new Skill(6, <></>, psql.src, "100%", "35%"),
+    new Skill(7, <></>, mysql.src, "80%", "80%"),
+    new Skill(8, <></>, mssql.src, "70%", "65%"),
+    new Skill(9, <></>, elasticsearch.src, "100%", "22%"),
+    new Skill(10, <></>, aws.src, "80%", "50%"),
+    new Skill(11, <></>, azure.src, "90%", "50%"),
+];
 
 export default function Skills() {
 
@@ -199,6 +220,10 @@ export default function Skills() {
                     <p className={dohyeon.className}>각 버튼을 클릭하면 상세 내용이 나옵니다.</p>
                 </div>
                 <SkillFlex skills={skills} setModalIsOpen={setModalIsOpen} setModalContent={setModalContent}/>
+                <div className="etc-head">
+                    <h1 className={dohyeon.className}>Others</h1>
+                </div>
+                <SkillSummary icons={icons}/>
             </div>
             <style jsx>{`
                 .skills-head {
@@ -209,6 +234,11 @@ export default function Skills() {
                     width: 95%;
                     height: 87%;
                     padding: 4% 5%;
+                }
+
+                .etc-head {
+                    margin-top: 50px;
+                    text-align: center;
                 }
 
             `}</style>

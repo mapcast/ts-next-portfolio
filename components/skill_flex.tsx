@@ -16,7 +16,7 @@ function SkillItem({ skill, setModalIsOpen, setModalContent }: {skill: Skill, se
             <style jsx>{`
                 .skills-item-wrap {
                     width:10.6%;
-                    height: 23%;
+                    height: 100%;
                     padding: 1% 3%;
                 }
                 .skills-item {
@@ -56,7 +56,8 @@ export default function SkillFlex({ skills, setModalIsOpen, setModalContent }: {
                     display: flex;
                     flex-wrap: wrap;
                     width: 100%;
-                    height: 80%;
+                    height: 18%;
+                    padding: 0 6.2vw;
                 }
             `}</style>
         </>
