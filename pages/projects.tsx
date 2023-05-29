@@ -2,26 +2,29 @@
 import { Sunflower, Do_Hyeon } from "next/font/google";
 import { Carousel, Table, Space, Tag } from "antd";
 import type { ColumnsType } from 'antd/es/table';
-import Rust from "../public/rust.png";
-import ReactIcon from "../public/reacticon.png";
-import SpringBoot from "../public/springboot.png";
-import Postgres from "../public/psql.png";
-import Node from "../public/node.png";
-import JSP from "../public/jsp.png";
-import Mysql from "../public/mysql.png";
-import Elastic from "../public/elasticsearch.png";
-import Scraper1 from "../public/scraper1.png";
+import Rust from "../public/icons/rust.png";
+import ReactIcon from "../public/icons/reacticon.png";
+import SpringBoot from "../public/icons/springboot.png";
+import Postgres from "../public/icons/psql.png";
+import Node from "../public/icons/node.png";
+import JSP from "../public/icons/jsp.png";
+import Mysql from "../public/icons/mysql.png";
+import Elastic from "../public/icons/elasticsearch.png";
+import Scraper1 from "../public/icons/scraper1.png";
 
-import Blog1 from "../public/blog1.png";
-import Blog2 from "../public/blog2.png";
-import Blog3 from "../public/blog3.png";
-import Blog4 from "../public/blog4.png";
+import Blog1 from "../public/projects/blog1.png";
+import Blog2 from "../public/projects/blog2.png";
+import Blog3 from "../public/projects/blog3.png";
+import Blog4 from "../public/projects/blog4.png";
 
-import Connect1 from "../public/connect1.png";
-import Connect2 from "../public/connect2.png";
-import Connect3 from "../public/connect3.png";
-import Connect4 from "../public/connect4.png";
-import Connect5 from "../public/connect5.png";
+import Connect1 from "../public/projects/connect1.png";
+import Connect2 from "../public/projects/connect2.png";
+import Connect3 from "../public/projects/connect3.png";
+import Connect4 from "../public/projects/connect4.png";
+import Connect5 from "../public/projects/connect5.png";
+
+import Chain1 from "../public/projects/chain1.png";
+import Chain2 from "../public/projects/chain2.png";
 
 const sunflower = Sunflower({
     subsets: ["latin"], 
@@ -137,101 +140,6 @@ export default function SideProjects() {
 
     return (
         <>
-            <div className="project-wrap" id="scraper">
-                <h1 className={sunflower.className}>
-                    <span className="title-head">법</span>원경매 스크래퍼
-                </h1>
-                <div className="project-inner-wrap">
-                    <div className="upper">
-                        <div className="upper-left">
-                            <Carousel autoplay>
-                                <div>
-                                    <img src={Scraper1.src} style={contentStyle}></img>
-                                </div>
-                                <div>
-                                    <div style={contentStyle}>
-                                        <Table columns={columns} dataSource={data} />
-                                    </div>
-                                </div>
-                            </Carousel>
-                        </div>
-                        <div className="upper-right">
-                            <span className={dohyeon.className}>
-                                auction-crawler 차후 제작할 웹 어플리케이션 사이드 프로젝트를 위해 제작한 웹 스크래핑 도구입니다. 
-                                <br/>
-                                <br/>
-                                최소한의 부하를 주는 건전한 스크래핑을 위해 24시간에 한번, 법원경매(https://www.courtauction.go.kr/) 사이트에서 14일 후에 진행 되는 전국 경매물건 목록을 가져 온 뒤 psql db에 저장합니다.
-                                <br/> 
-                                <br/>
-                                사용 라이브러리
-                                <ul>
-                                    <li>reqwest (https://crates.io/crates/reqwest)</li>
-                                    <li>scraper (https://crates.io/crates/scraper)</li>
-                                    <li>loa (https://crates.io/crates/loa, 코드 일부만 참조)</li>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-                    <div className="lower">
-                        <div className="image-wrap">
-                            <img src={Rust.src}/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="project-wrap" id="chain">
-                <h1 className={sunflower.className}>
-                    <span className="title-head">C</span>hain-Cho
-                </h1>
-                <div className="project-inner-wrap">
-                    <div className="upper">
-                        <div className="upper-left">
-                            <Carousel autoplay>
-                                <div>
-                                    <img src={Rust.src} style={contentStyle}></img>
-                                </div>
-                                <div>
-                                    <h3 style={contentStyle}>2</h3>
-                                </div>
-                                <div>
-                                    <h3 style={contentStyle}>3</h3>
-                                </div>
-                                <div>
-                                    <h3 style={contentStyle}>4</h3>
-                                </div>
-                            </Carousel>
-                        </div>
-                        <div className="upper-right">
-                            <span className={dohyeon.className}>
-                            스마트 포인터나 unsafe rust 등의 실습과 차후 개인적인 사용을 위해 만든 사이드 프로젝트입니다. nightly 버전을 사용합니다.
-                            <br/>
-                            <br/>
-                            https://blog.logrocket.com/how-to-build-a-blockchain-in-rust/
-                            <br/>
-                            등에서 참조한 블록체인 채굴 로직을 사용했으며, 블록 채굴 현황을 P2P 통신으로 공유하도록 작성돼었습니다. 
-                            <br/>
-                            <br/>
-                            tower-web을 통한 rest api 기능을 지원합니다.
-                            <br/>
-                            채굴한 블록과 접속해있는 피어 등을 확인 가능합니다.
-                            <br/>
-                            <br/>
-                            사용 라이브러리
-                            <ul>
-                                <li>libp2p (https://crates.io/crates/libp2p)</li>
-                                <li>tower-web (https://crates.io/crates/tower-web)</li>
-                                <li>rocks (https://crates.io/crates/rocks)</li>
-                            </ul>
-                            </span>
-                        </div>
-                    </div>
-                    <div className="lower">
-                        <div className="image-wrap">
-                            <img src={Rust.src}/>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div className="project-wrap" id="blog">
                 <h1 className={sunflower.className}>
                     <span className="title-head">개</span>인 블로그
@@ -293,6 +201,99 @@ export default function SideProjects() {
                     </div>
                 </div>
             </div>
+            <div className="project-wrap" id="scraper">
+                <h1 className={sunflower.className}>
+                    <span className="title-head">법</span>원경매 스크래퍼
+                </h1>
+                <div className="project-inner-wrap">
+                    <div className="upper">
+                        <div className="upper-left">
+                            <Carousel autoplay>
+                                <div>
+                                    <img src={Scraper1.src} style={contentStyle}></img>
+                                </div>
+                                <div>
+                                    <div style={contentStyle}>
+                                        <Table columns={columns} dataSource={data} />
+                                    </div>
+                                </div>
+                            </Carousel>
+                        </div>
+                        <div className="upper-right">
+                            <span className={dohyeon.className}>
+                                auction-crawler 차후 제작할 웹 어플리케이션 사이드 프로젝트를 위해 제작한 웹 스크래핑 도구입니다. 
+                                <br/>
+                                <br/>
+                                최소한의 부하를 주는 건전한 스크래핑을 위해 24시간에 한번, 법원경매(https://www.courtauction.go.kr/) 사이트에서 14일 후에 진행 되는 전국 경매물건 목록을 가져 온 뒤 psql db에 저장합니다.
+                                <br/> 
+                                <br/>
+                                사용 라이브러리
+                                <ul>
+                                    <li>reqwest (https://crates.io/crates/reqwest)</li>
+                                    <li>scraper (https://crates.io/crates/scraper)</li>
+                                    <li>loa (https://crates.io/crates/loa, 코드 일부만 참조)</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                    <div className="lower">
+                        <div className="image-wrap">
+                            <img src={Rust.src}/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="project-wrap" id="chain">
+                <h1 className={sunflower.className}>
+                    <span className="title-head">C</span>hain-Cho
+                </h1>
+                <div className="project-inner-wrap">
+                    <div className="upper">
+                        <div className="upper-left">
+                            <Carousel autoplay>
+                                <div>
+                                    <img src={Chain1.src} style={contentStyle}></img>
+                                </div>
+                                <div>
+                                    <img src={Chain2.src} style={contentStyle}></img>
+                                </div>
+                            </Carousel>
+                        </div>
+                        <div className="upper-right">
+                            <span className={dohyeon.className}>
+                            스마트 포인터나 unsafe rust 등의 실습과 차후 개인적인 사용을 위해 만든 사이드 프로젝트입니다. nightly 버전을 사용합니다.
+                            <br/>
+                            <br/>
+                            https://blog.logrocket.com/how-to-build-a-blockchain-in-rust/
+                            <br/>
+                            등에서 참조한 블록체인 채굴 로직을 사용했으며, 블록 채굴 현황을 P2P 통신으로 공유하고, 하나의 노드가 채굴 완료 시 모든 노드가 동작 중단후 채굴된 블록 정보를 받아서 다시 채굴을 진행하도록 프로그래밍 되어 있습니다. 
+                            <br/>
+                            <br/>
+                            rocksDB를 사용하여 채굴한 블록 정보 등을 저장하고, 프로그램 재기동 시에는 서버에 동작중이 노드가 없을 시 해당 DB의 정보를 사용하여 채굴을 진행합니다.
+                            <br/>
+                            <br/>
+                            tower-web을 통한 rest api 기능을 지원합니다.
+                            <br/>
+                            채굴한 블록과 접속해있는 피어 등을 확인 가능합니다.
+                            <br/>
+                            <br/>
+                            사용 라이브러리
+                            <ul>
+                                <li>libp2p (https://crates.io/crates/libp2p)</li>
+                                <li>tower-web (https://crates.io/crates/tower-web)</li>
+                                <li>rocks (https://crates.io/crates/rocks)</li>
+                            </ul>
+                            </span>
+                        </div>
+                    </div>
+                    <div className="lower">
+                        <div className="image-wrap">
+                            <img src={Rust.src}/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div className="project-wrap" id="tutor">
                 <h1 className={sunflower.className}>
                     <span className="title-head">과</span>외커넥터

@@ -15,9 +15,9 @@ function SkillItem({ skill, setModalIsOpen, setModalContent }: {skill: Skill, se
             </div>
             <style jsx>{`
                 .skills-item-wrap {
-                    width:10.6%;
+                    width: 8vw;
                     height: 100%;
-                    padding: 1% 3%;
+                    padding: 2vh 3.5vw;
                 }
                 .skills-item {
                     border: 1px solid #AAA;
@@ -48,16 +48,16 @@ export default function SkillFlex({ skills, setModalIsOpen, setModalContent }: {
     return (
         <>
             <div className="skills-flex">
-                {skills.map((skill) => <SkillItem key={skill.id} skill={skill} setModalIsOpen={setModalIsOpen} setModalContent={setModalContent}/>)}
+                {skills.map((skill, idx) => <SkillItem key={idx} skill={skill} setModalIsOpen={setModalIsOpen} setModalContent={setModalContent}/>)}
             </div>
             <style jsx>{`
                 .skills-flex {
-                    margin-top: 30px;
+                    margin-top: 40px;
                     display: flex;
                     flex-wrap: wrap;
                     width: 100%;
                     height: 18%;
-                    padding: 0 6.2vw;
+                    
                 }
             `}</style>
         </>

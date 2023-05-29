@@ -1,24 +1,25 @@
 import Modal from 'react-modal';
 import { Do_Hyeon } from "next/font/google";
 
-import springboot from "../public/springboot.png";
-import sql from "../public/sql.png";
-import java from "../public/java.png";
-import javascript from "../public/javascript.png";
-import rust from "../public/rust.png";
-import elasticsearch from "../public/elasticsearch.png";
+import springboot from "../public/icons/springboot.png";
+import sql from "../public/icons/sql.png";
+import java from "../public/icons/java.png";
+import javascript from "../public/icons/javascript.png";
+import rust from "../public/icons/rust.png";
+import elasticsearch from "../public/icons/elasticsearch.png";
 
-import database from "../public/database.png";
-import typescript from "../public/typescript.png";
-import reactredux from "../public/reactredux.png";
-import jquery from "../public/jquery.png";
-import thymeleaf from "../public/thymeleaf.png";
-import htmlcss from "../public/htmlcss.png";
-import aws from "../public/aws.png";
-import azure from "../public/azure.png";
-import psql from "../public/psql.png";
-import mysql from "../public/mysql.png";
-import mssql from "../public/mssql.png";
+import database from "../public/icons/database.png";
+import typescript from "../public/icons/typescript.png";
+import reactredux from "../public/icons/reactredux.png";
+import jquery from "../public/icons/jquery.png";
+import nextjs from "../public/icons/next.png";
+import thymeleaf from "../public/icons/thymeleaf.png";
+import htmlcss from "../public/icons/htmlcss.png";
+import aws from "../public/icons/aws.png";
+import azure from "../public/icons/azure.png";
+import psql from "../public/icons/psql.png";
+import mysql from "../public/icons/mysql.png";
+import mssql from "../public/icons/mssql.png";
 
 import SkillFlex from "../components/skill_flex";
 import Skill from "../classes/skill";
@@ -58,7 +59,7 @@ const modal_style: any = {
 };
 
 const skills: Skill[] = [
-    new Skill(1,
+    new Skill(
         <> 
             <h3>Java</h3>
             <span>
@@ -80,7 +81,7 @@ const skills: Skill[] = [
             </ul>
         </>,
         java.src, "60%", "60%"),
-    new Skill(2,
+    new Skill(
         <>
             <h3>Spring Boot</h3>
             <span>
@@ -101,7 +102,7 @@ const skills: Skill[] = [
             </ul>
         </>,
         springboot.src, "60%", "35%"),
-    new Skill(3,
+    new Skill(
         <>
             <h3>JavaScript</h3>
             <span>
@@ -132,11 +133,9 @@ const skills: Skill[] = [
             </ul>
         </>,
         javascript.src, "55%", "60%"),
-    new Skill(4,
+    new Skill(
         <>
             <h3>DB</h3>
-            <h5>사용 경험(React, Express)</h5>
-            <br/>
             <h5>Postgre SQL</h5>
             <ul>
                 <li>회사와 개인 프로젝트 등에서 가장 빈번한 사용 경험</li>
@@ -155,7 +154,7 @@ const skills: Skill[] = [
             </ul>
         </>,
         database.src, "60%", "55%"),
-    new Skill(5,
+    new Skill(
 	    <>
             <h3>Rust</h3>
             <span>
@@ -186,17 +185,18 @@ const skills: Skill[] = [
 ]
 
 const icons: Skill[] = [
-    new Skill(1, <></>, jquery.src, "100%", "20%"),
-    new Skill(2, <></>, typescript.src, "70%", "70%"),
-    new Skill(3, <></>, reactredux.src, "100%", "35%"),
-    new Skill(4, <></>, htmlcss.src, "100%", "60%"),
-    new Skill(5, <></>, thymeleaf.src, "60%", "60%"),
-    new Skill(6, <></>, psql.src, "100%", "35%"),
-    new Skill(7, <></>, mysql.src, "80%", "80%"),
-    new Skill(8, <></>, mssql.src, "70%", "65%"),
-    new Skill(9, <></>, elasticsearch.src, "100%", "22%"),
-    new Skill(10, <></>, aws.src, "80%", "50%"),
-    new Skill(11, <></>, azure.src, "90%", "50%"),
+    new Skill(<></>, jquery.src, "100%", "20%"),
+    new Skill(<></>, typescript.src, "70%", "70%"),
+    new Skill(<></>, reactredux.src, "100%", "35%"),
+    new Skill(<></>, nextjs.src, "90%", "45%"),
+    new Skill(<></>, htmlcss.src, "100%", "60%"),
+    new Skill(<></>, thymeleaf.src, "60%", "60%"),
+    new Skill(<></>, psql.src, "100%", "35%"),
+    new Skill(<></>, mysql.src, "80%", "80%"),
+    new Skill(<></>, mssql.src, "70%", "65%"),
+    new Skill(<></>, elasticsearch.src, "100%", "22%"),
+    new Skill(<></>, aws.src, "80%", "50%"),
+    new Skill(<></>, azure.src, "90%", "50%"),
 ];
 
 export default function Skills() {
@@ -220,9 +220,6 @@ export default function Skills() {
                     <p className={dohyeon.className}>각 버튼을 클릭하면 상세 내용이 나옵니다.</p>
                 </div>
                 <SkillFlex skills={skills} setModalIsOpen={setModalIsOpen} setModalContent={setModalContent}/>
-                <div className="etc-head">
-                    <h1 className={dohyeon.className}>Others</h1>
-                </div>
                 <SkillSummary icons={icons}/>
             </div>
             <style jsx>{`

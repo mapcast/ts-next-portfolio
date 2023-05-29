@@ -41,7 +41,7 @@ export default function SkillSummary({ icons }: {icons: Skill[]}) {
             </div>
             <style jsx>{`
                 .summary-flex {
-                    margin-top: 30px;
+                    margin-top: 100px;
                     display: flex;
                     flex-wrap: wrap;
                     width: 100%;
