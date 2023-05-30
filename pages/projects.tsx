@@ -25,6 +25,7 @@ import Connect5 from "../public/projects/connect5.png";
 
 import Chain1 from "../public/projects/chain1.png";
 import Chain2 from "../public/projects/chain2.png";
+import Link from "next/link";
 
 const sunflower = Sunflower({
     subsets: ["latin"], 
@@ -182,6 +183,10 @@ export default function SideProjects() {
                                     <li>jjwt (https://github.com/jwtk/jjwt)</li>
                                     <li>ckeditor (https://ckeditor.com/)</li>
                                 </ul>
+                                <br/>
+                                <Link href={"https://github.com/mapcast/transplate-blog"}>github</Link>
+                                <br/>
+                                <Link href={"https://github.com/mapcast/blog-rest-api"}>github(rest)</Link>
                             </span>
                         </div>
                     </div>
@@ -233,6 +238,8 @@ export default function SideProjects() {
                                     <li>scraper (https://crates.io/crates/scraper)</li>
                                     <li>loa (https://crates.io/crates/loa, 코드 일부만 참조)</li>
                                 </ul>
+                                <br/>
+                                <Link href={"https://github.com/mapcast/auction-crawler"}>github</Link>
                             </span>
                         </div>
                     </div>
@@ -261,28 +268,28 @@ export default function SideProjects() {
                         </div>
                         <div className="upper-right">
                             <span className={dohyeon.className}>
-                            스마트 포인터나 unsafe rust 등의 실습과 차후 개인적인 사용을 위해 만든 사이드 프로젝트입니다. nightly 버전을 사용합니다.
-                            <br/>
-                            <br/>
-                            https://blog.logrocket.com/how-to-build-a-blockchain-in-rust/
-                            <br/>
-                            등에서 참조한 블록체인 채굴 로직을 사용했으며, 블록 채굴 현황을 P2P 통신으로 공유하고, 하나의 노드가 채굴 완료 시 모든 노드가 동작 중단후 채굴된 블록 정보를 받아서 다시 채굴을 진행하도록 프로그래밍 되어 있습니다. 
-                            <br/>
-                            <br/>
-                            rocksDB를 사용하여 채굴한 블록 정보 등을 저장하고, 프로그램 재기동 시에는 서버에 동작중이 노드가 없을 시 해당 DB의 정보를 사용하여 채굴을 진행합니다.
-                            <br/>
-                            <br/>
-                            tower-web을 통한 rest api 기능을 지원합니다.
-                            <br/>
-                            채굴한 블록과 접속해있는 피어 등을 확인 가능합니다.
-                            <br/>
-                            <br/>
-                            사용 라이브러리
-                            <ul>
-                                <li>libp2p (https://crates.io/crates/libp2p)</li>
-                                <li>tower-web (https://crates.io/crates/tower-web)</li>
-                                <li>rocks (https://crates.io/crates/rocks)</li>
-                            </ul>
+                                스마트 포인터나 unsafe rust 등의 실습과 차후 개인적인 사용을 위해 만든 사이드 프로젝트입니다. nightly 버전을 사용합니다.
+                                <br/>
+                                https://blog.logrocket.com/how-to-build-a-blockchain-in-rust/
+                                <br/>
+                                등에서 참조한 블록체인 채굴 로직을 사용했으며, 블록 채굴 현황을 P2P 통신으로 공유하고, 하나의 노드가 채굴 완료 시 모든 노드가 동작 중단후 채굴된 블록 정보를 받아서 다시 채굴을 진행하도록 프로그래밍 되어 있습니다. 
+                                <br/>
+                                <br/>
+                                rocksDB를 사용하여 채굴한 블록 정보 등을 저장하고, 프로그램 재기동 시에는 서버에 동작중이 노드가 없을 시 해당 DB의 정보를 사용하여 채굴을 진행합니다.
+                                <br/>
+                                tower-web을 통한 rest api 기능을 지원합니다.
+                                <br/>
+                                채굴한 블록과 접속해있는 피어 등을 확인 가능합니다.
+                                <br/>
+                                <br/>
+                                사용 라이브러리
+                                <ul>
+                                    <li>libp2p (https://crates.io/crates/libp2p)</li>
+                                    <li>tower-web (https://crates.io/crates/tower-web)</li>
+                                    <li>rocks (https://crates.io/crates/rocks)</li>
+                                </ul>
+                                <br/>
+                                <Link href={"https://github.com/mapcast/chain-cho-v1"}>github</Link>
                             </span>
                         </div>
                     </div>
@@ -327,7 +334,11 @@ export default function SideProjects() {
                                 다중 조건/다중 항목 검색과 랜덤 추천, 개인 페이지 조회, 1:1 채팅 등의 기능이 있습니다.
                                 <br/>
                                 <br/>
-                                Cafe24를 통한 웹 호스팅 서비스를 하고 있었으나, 현재 지원 종료돼었습니다.
+                                Cafe24를 통한 웹 호스팅 서비스를 하고 있었으나, 현재 지원 종료 되었습니다.
+                                <br/>
+                                <br/>
+                                <br/>
+                                <Link href={"https://github.com/mapcast/tutorConnector"}>github</Link>
                             </span>
                         </div>
                     </div>
