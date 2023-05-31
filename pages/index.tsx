@@ -17,7 +17,7 @@ export default function Home() {
       <h1 className={sunflower.className}>조<span className="h1-emp">현승</span></h1>
       <span className={classNames(sunflower.className, 'phone-email')}>010-6851-7574 · qlqldyd54321@gmail.com</span>
       <p className={dohyeon.className}>
-      	2013-03 ~ 2019-02 동의대학교 재학 (주전공: 정보통신공학, 부전공: 일어일문)
+      	2013-03 ~ 2019-02 동의대학교 졸업 (주전공: 정보통신공학, 부전공: 일어일문)
       	<br/>
       	2020-02 ~ 2020-08 - 부산IT교육센터 Java 개발자 6개월 과정 수료
       	<br/>
