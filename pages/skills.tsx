@@ -7,6 +7,7 @@ import java from "../public/icons/java.png";
 import javascript from "../public/icons/javascript.png";
 import rust from "../public/icons/rust.png";
 import elasticsearch from "../public/icons/elasticsearch.png";
+import mongo from "../public/icons/mongo.png";
 
 import database from "../public/icons/database.png";
 import typescript from "../public/icons/typescript.png";
@@ -20,6 +21,7 @@ import azure from "../public/icons/azure.png";
 import psql from "../public/icons/psql.png";
 import mysql from "../public/icons/mysql.png";
 import mssql from "../public/icons/mssql.png";
+import tauri from "../public/icons/tauri_logo_light.svg";
 
 import SkillFlex from "../components/skill_flex";
 import Skill from "../classes/skill";
@@ -189,12 +191,14 @@ const icons: Skill[] = [
     new Skill(<></>, typescript.src, "70%", "70%"),
     new Skill(<></>, reactredux.src, "100%", "35%"),
     new Skill(<></>, nextjs.src, "90%", "45%"),
+    new Skill(<></>, tauri.src, "90%", "30%"),
     new Skill(<></>, htmlcss.src, "100%", "60%"),
     new Skill(<></>, thymeleaf.src, "60%", "60%"),
     new Skill(<></>, psql.src, "100%", "35%"),
     new Skill(<></>, mysql.src, "80%", "80%"),
     new Skill(<></>, mssql.src, "70%", "65%"),
     new Skill(<></>, elasticsearch.src, "100%", "22%"),
+    new Skill(<></>, mongo.src, "80%", "80%"),
     new Skill(<></>, aws.src, "80%", "50%"),
     new Skill(<></>, azure.src, "90%", "50%"),
 ];

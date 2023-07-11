@@ -352,47 +352,6 @@ export default function SideProjects() {
                     </div>
                 </div>
             </div>
-            <div className="project-wrap" id="es">
-                <h1 className={sunflower.className}>
-                    <span className="title-head">E</span>lasticsearch-API
-                </h1>
-                <div className="project-inner-wrap">
-                    <div className="upper">
-                        <div className="upper-left">
-                            <Carousel autoplay>
-                                <div>
-                                    <img src={Rust.src} style={contentStyle}></img>
-                                </div>
-                                <div>
-                                    <h3 style={contentStyle}>2</h3>
-                                </div>
-                                <div>
-                                    <h3 style={contentStyle}>3</h3>
-                                </div>
-                                <div>
-                                    <h3 style={contentStyle}>4</h3>
-                                </div>
-                            </Carousel>
-                        </div>
-                        <div className="upper-right">
-                            <span className={dohyeon.className}>
-                                ElasticSearch의 복잡한 Nested Search 쿼리나 집계 쿼리를 간단하게 사용할 수 있게 해주는 Rest API입니다.
-                                <br/>
-                                <br/>
-                                아직은 개발 진행 중입니다.
-                            </span>
-                        </div>
-                    </div>
-                    <div className="lower">
-                        <div className="image-wrap">
-                            <img src={Elastic.src}/>
-                        </div>
-                        <div className="image-wrap">
-                            <img src={SpringBoot.src}/>
-                        </div>
-                    </div>
-                </div>
-            </div>
             
             <style jsx>{`
                 hr {

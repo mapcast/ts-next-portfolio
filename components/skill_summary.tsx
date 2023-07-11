@@ -11,7 +11,7 @@ function SummaryIcon({ icon }: {icon: Skill}) {
             </div>
             <style jsx>{`
                 .skills-summary-wrap {
-                    width:10.6%;
+                    width:8.285%;
                     height: 50%;
                     padding: 1% 3%;
                 }
@@ -45,7 +45,7 @@ export default function SkillSummary({ icons }: {icons: Skill[]}) {
                     display: flex;
                     flex-wrap: wrap;
                     width: 100%;
-                    height: 41%;
+                    height: 30%;
                 }
             `}</style>
         </>

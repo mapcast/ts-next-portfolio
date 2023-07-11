@@ -58,11 +58,6 @@ export default function SideNav() {
                     <a className={bhs.className}>과외커넥터</a>
                 </Link>
             </li>
-            <li>
-                <Link href="/projects/#es" legacyBehavior>
-                    <a className={bhs.className}>ES-API</a>
-                </Link>
-            </li>
         </ul>
         </div>
     </nav>
