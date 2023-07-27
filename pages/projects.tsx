@@ -145,7 +145,7 @@ export default function SideProjects() {
 
     return (
         <>
-            <div className="project-wrap" id="blog">
+            <div className="project-wrap" id="depassito">
                 <h1 className={sunflower.className}>
                     <span className="title-head">D</span>epassito
                 </h1>
