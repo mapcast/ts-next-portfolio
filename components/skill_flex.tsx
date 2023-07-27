@@ -57,7 +57,6 @@ export default function SkillFlex({ skills, setModalIsOpen, setModalContent }: {
                     flex-wrap: wrap;
                     width: 100%;
                     height: 18%;
-                    
                 }
             `}</style>
         </>

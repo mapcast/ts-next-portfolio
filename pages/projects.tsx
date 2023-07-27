@@ -9,8 +9,12 @@ import Postgres from "../public/icons/psql.png";
 import Node from "../public/icons/node.png";
 import JSP from "../public/icons/jsp.png";
 import Mysql from "../public/icons/mysql.png";
-import Elastic from "../public/icons/elasticsearch.png";
 import Scraper1 from "../public/icons/scraper1.png";
+import Next from "../public/icons/next.png";
+import Tauri from "../public/icons/tauri_logo_light.svg";
+
+import Depassito1 from "../public/projects/depassito1.png";
+import Depassito2 from "../public/projects/depassito2.png";
 
 import Blog1 from "../public/projects/blog1.png";
 import Blog2 from "../public/projects/blog2.png";
@@ -141,6 +145,56 @@ export default function SideProjects() {
 
     return (
         <>
+            <div className="project-wrap" id="blog">
+                <h1 className={sunflower.className}>
+                    <span className="title-head">D</span>epassito
+                </h1>
+                <div className="project-inner-wrap">
+                    <div className="upper">
+                        <div className="upper-left">
+                            <Carousel autoplay>
+                                <div>
+                                    <img src={Depassito1.src} style={contentStyle}></img>
+                                </div>
+                                <div>
+                                    <img src={Depassito2.src} style={contentStyle}></img>
+                                </div>
+                            </Carousel>
+                        </div>
+                        <div className="upper-right">
+                            <span className={dohyeon.className}>
+                                depassito는, depository + password + despacito의 합성어입니다. 
+                                <br/>
+                                <br/>
+                                이 프로그램은 안전한 패스워드를 만들고 관리해주는 프로그램으로,
+                                <br/>
+                                랜덤 생성한 패스워드 데이터를 AES256 + base64로 암호화 한 뒤 
+                                <br/>
+                                rocksdb를 사용해서 저장합니다.
+                                <br/>
+                                <br/>
+                                tauri 프레임워크를 사용해서 작성되었기 때문에, 앱이 가볍습니다.
+                                <br/>
+                                <br/>
+                                <Link href={"https://odri0220.tistory.com/10"}>다운로드 페이지</Link>
+                                <br/>
+                                <Link href={"https://github.com/mapcast/depassito"}>Github</Link>
+                            </span>
+                        </div>
+                    </div>
+                    <div className="lower">
+                        <div className="image-wrap">
+                            <img src={Rust.src}/>
+                        </div>
+                        <div className="image-wrap">
+                            <img src={Next.src}/>
+                        </div>
+                        <div className="image-wrap">
+                            <img src={Tauri.src}/>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="project-wrap" id="blog">
                 <h1 className={sunflower.className}>
                     <span className="title-head">개</span>인 블로그
