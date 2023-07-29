@@ -24,7 +24,9 @@ export default function Home() {
         2020-08 ~ 현재 - Seekers Inc. 재직중
       </p>
       <br/>
-      <span className={classNames(sunflower.className)}>※해당 페이지는 1920x1080 해상도에서 정상 작동합니다. 노트북으로 볼 때는 브라우저 화면 비율을 80%로 맞춰주세요.</span>
+      <span className={classNames(sunflower.className)}>※해당 페이지는 1920x1080 해상도에서 정상 작동합니다.</span>
+      <br/>
+      <span className={classNames(sunflower.className)}>※브라우저 버전에 따라 사이드 프로젝트 페이지가 정상작동 하지 않을 수 있습니다.</span>
       <style jsx>{`
 
         div {
@@ -41,7 +43,7 @@ export default function Home() {
         }
 
         .h1-emp {
-          color: #bd5d38;
+          color: #47A992;
         }
 
         .phone-email {

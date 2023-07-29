@@ -77,7 +77,7 @@ export default function SideNav() {
             padding-bottom:11rem;
             border-right:4px solid #DDDDDD;
             z-index: 9;
-            background-color: rgb(248, 132, 92);
+            background-color: #D6E8DB;
             position: fixed;
             top: 0px;
             right: 0px;
@@ -95,8 +95,8 @@ export default function SideNav() {
         img {
             max-width: 100%;
             max-height: 10rem;
-            border: 0.5rem solid rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
+            border: 0.5rem solid rgba(0, 0, 0, 0.1);
+            border-radius: 30%;
             height: auto;
         }
 
@@ -128,7 +128,7 @@ export default function SideNav() {
         }
 
         .side-menu-category {
-            color: rgb(17, 17, 17);
+            color: rgba(0, 0, 0, 0.8);
             margin-top: 30px;
             margin-bottom: 10px;
             font-size: 1.2rem;

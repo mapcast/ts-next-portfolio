@@ -426,10 +426,9 @@ export default function SideProjects() {
                     margin-top: 2vh;
                     box-shadow: 5px 3px 3px #BBB;
                     background: #D6E8DB;
-                    border: 3px #A6B8AB;
                 }
                 .title-head {
-                    color: #bd5d38
+                    color: #47A992;
                 }
 
                 .upper {

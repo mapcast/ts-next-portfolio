@@ -22,6 +22,8 @@ import psql from "../public/icons/psql.png";
 import mysql from "../public/icons/mysql.png";
 import mssql from "../public/icons/mssql.png";
 import tauri from "../public/icons/tauri_logo_light.svg";
+import redis from "../public/icons/redis.png";
+import kafka from "../public/icons/kafka.png";
 
 import SkillFlex from "../components/skill_flex";
 import Skill from "../classes/skill";
@@ -201,6 +203,8 @@ const icons: Skill[] = [
     new Skill(<></>, mongo.src, "80%", "80%"),
     new Skill(<></>, aws.src, "80%", "50%"),
     new Skill(<></>, azure.src, "90%", "50%"),
+    new Skill(<></>, redis.src, "70%", "70%"),
+    new Skill(<></>, kafka.src, "90%", "50%"),
 ];
 
 export default function Skills() {
