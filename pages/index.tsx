@@ -13,7 +13,7 @@ const dohyeon = Do_Hyeon({
 
 export default function Home() {
   return (
-    <div>
+    <div className="index-wrap">
       <h1 className={sunflower.className}>조<span className="h1-emp">현승</span></h1>
       <span className={classNames(sunflower.className, 'phone-email')}>010-6851-7574 · qlqldyd54321@gmail.com</span>
       <p className={dohyeon.className}>
@@ -28,8 +28,7 @@ export default function Home() {
       <br/>
       <span className={classNames(sunflower.className)}>※브라우저 버전에 따라 사이드 프로젝트 페이지가 정상작동 하지 않을 수 있습니다.</span>
       <style jsx>{`
-
-        div {
+        .index-wrap {
           padding-top: 19%;
           padding-left: 5%;
         }
