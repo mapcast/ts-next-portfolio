@@ -2,7 +2,6 @@ import Modal from 'react-modal';
 import { Do_Hyeon } from "next/font/google";
 
 import springboot from "../public/icons/springboot.png";
-import sql from "../public/icons/sql.png";
 import java from "../public/icons/java.png";
 import javascript from "../public/icons/javascript.png";
 import rust from "../public/icons/rust.png";
@@ -24,6 +23,7 @@ import mssql from "../public/icons/mssql.png";
 import tauri from "../public/icons/tauri_logo_light.svg";
 import redis from "../public/icons/redis.png";
 import kafka from "../public/icons/kafka.png";
+import selenium from "../public/icons/selenium.png";
 
 import SkillFlex from "../components/skill_flex";
 import Skill from "../classes/skill";
@@ -205,6 +205,7 @@ const icons: Skill[] = [
     new Skill(<></>, azure.src, "90%", "50%"),
     new Skill(<></>, redis.src, "70%", "70%"),
     new Skill(<></>, kafka.src, "90%", "50%"),
+    new Skill(<></>, selenium.src, "100%", "25%"),
 ];
 
 export default function Skills() {

@@ -1,5 +1,5 @@
 
-import { Sunflower, Do_Hyeon } from "next/font/google";
+import { Do_Hyeon } from "next/font/google";
 import { Carousel, Table, Space, Tag } from "antd";
 import type { ColumnsType } from 'antd/es/table';
 import Rust from "../public/icons/rust.png";
@@ -12,6 +12,12 @@ import Mysql from "../public/icons/mysql.png";
 import Scraper1 from "../public/icons/scraper1.png";
 import Next from "../public/icons/next.png";
 import Tauri from "../public/icons/tauri_logo_light.svg";
+import Selenium from "../public/icons/selenium.png";
+import Mongo from "../public/icons/mongolong.png";
+
+import Cucumber1 from "../public/projects/cucumber1.png";
+import Cucumber2 from "../public/projects/cucumber2.png";
+import Cucumber3 from "../public/projects/cucumber3.png";
 
 import Depassito1 from "../public/projects/depassito1.png";
 import Depassito2 from "../public/projects/depassito2.png";
@@ -30,11 +36,6 @@ import Connect5 from "../public/projects/connect5.png";
 import Chain1 from "../public/projects/chain1.png";
 import Chain2 from "../public/projects/chain2.png";
 import Link from "next/link";
-
-const sunflower = Sunflower({
-    subsets: ["latin"], 
-    weight: ["500"],
-});
 
 const dohyeon = Do_Hyeon({
     subsets: ["latin"], 
@@ -145,8 +146,66 @@ export default function SideProjects() {
 
     return (
         <>
+            <div className="project-wrap" id="cucumber">
+                <h1 className={dohyeon.className}>
+                    <span className="title-head">C</span>ucumber
+                </h1>
+                <div className="project-inner-wrap">
+                    <div className="upper">
+                        <div className="upper-left">
+                            <Carousel autoplay>
+                                <div>
+                                    <img src={Cucumber1.src} style={contentStyle}></img>
+                                </div>
+                                <div>
+                                    <img src={Cucumber2.src} style={contentStyle}></img>
+                                </div>
+                                <div>
+                                    <img src={Cucumber3.src} style={contentStyle}></img>
+                                </div>
+                            </Carousel>
+                        </div>
+                        <div className="upper-right">
+                            <span className={dohyeon.className}>
+                                Cucumber는 경마 데이터베이스입니다.
+                                <br/>
+                                셀레니움을 통해 <Link href={"https://www.netkeiba.com"}>넷케이바</Link>에서 경주 데이터를 수집합니다.
+                                <br/>
+                                <br/>
+                                경주 6일 전/1일 전/경주 종료 30분 후 데이터가 갱신 되며,
+                                <br/>
+                                경주 기록과 경주마의 혈통, 프로필 등 다양한 정보를 열람 가능합니다.
+                                <br/>
+                                축적된 데이터를 상세하게 검색하는 기능을 지원하고, 
+                                <br/>
+                                연간 일정과 랭킹 등 다양한 데이터를 가지고 있습니다.
+                                <br/>
+                                <br/>
+                                사용자가 번역 데이터를 직접 제공 가능하며, 한번 저장된 데이터가 계속되서 사용됩니다.
+                                <br/>
+                                <br/>
+                                <Link href={"https://ccb.kr"}>링크</Link>
+                            </span>
+                        </div>
+                    </div>
+                    <div className="lower">
+                        <div className="image-wrap">
+                            <img src={SpringBoot.src}/>
+                        </div>
+                        <div className="image-wrap">
+                            <img src={Selenium.src} width="50px"/>
+                        </div>
+                        <div className="image-wrap">
+                            <img src={Mongo.src} width="50px"/>
+                        </div>
+                        <div className="image-wrap">
+                            <img src={Next.src}/>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="project-wrap" id="depassito">
-                <h1 className={sunflower.className}>
+                <h1 className={dohyeon.className}>
                     <span className="title-head">D</span>epassito
                 </h1>
                 <div className="project-inner-wrap">
@@ -196,7 +255,7 @@ export default function SideProjects() {
                 </div>
             </div>
             <div className="project-wrap" id="blog">
-                <h1 className={sunflower.className}>
+                <h1 className={dohyeon.className}>
                     <span className="title-head">개</span>인 블로그
                 </h1>
                 <div className="project-inner-wrap">
@@ -261,7 +320,7 @@ export default function SideProjects() {
                 </div>
             </div>
             <div className="project-wrap" id="scraper">
-                <h1 className={sunflower.className}>
+                <h1 className={dohyeon.className}>
                     <span className="title-head">법</span>원경매 스크래퍼
                 </h1>
                 <div className="project-inner-wrap">
@@ -304,8 +363,10 @@ export default function SideProjects() {
                     </div>
                 </div>
             </div>
+
+            
             <div className="project-wrap" id="chain">
-                <h1 className={sunflower.className}>
+                <h1 className={dohyeon.className}>
                     <span className="title-head">C</span>hain-Cho
                 </h1>
                 <div className="project-inner-wrap">
@@ -356,7 +417,7 @@ export default function SideProjects() {
             </div>
             
             <div className="project-wrap" id="tutor">
-                <h1 className={sunflower.className}>
+                <h1 className={dohyeon.className}>
                     <span className="title-head">과</span>외커넥터
                 </h1>
                 <div className="project-inner-wrap">
