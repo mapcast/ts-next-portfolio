@@ -35,6 +35,12 @@ import Connect5 from "../public/projects/connect5.png";
 
 import Chain1 from "../public/projects/chain1.png";
 import Chain2 from "../public/projects/chain2.png";
+
+import Fs1 from "../public/projects/fs1.png";
+import Fs2 from "../public/projects/fs2.png";
+import Fs3 from "../public/projects/fs3.png";
+import Fs4 from "../public/projects/fs4.png";
+import Fs5 from "../public/projects/fs5.png";
 import Link from "next/link";
 
 const dohyeon = Do_Hyeon({
@@ -146,6 +152,54 @@ export default function SideProjects() {
 
     return (
         <>
+            <div className="project-wrap" id="fs">
+                <h1 className={dohyeon.className}>
+                    <span className="title-head">파</span>일 공유 시스템    
+                </h1>
+                <div className="project-inner-wrap">
+                    <div className="upper">
+                        <div className="upper-left-2">
+                            <Carousel autoplay>
+                                <div>
+                                    <img src={Fs1.src} style={contentStyle}></img>
+                                </div>
+                                <div>
+                                    <img src={Fs2.src} style={contentStyle}></img>
+                                </div>
+                                <div>
+                                    <img src={Fs3.src} style={contentStyle}></img>
+                                </div>
+                                <div>
+                                    <img src={Fs4.src} style={contentStyle}></img>
+                                </div>
+                                <div>
+                                    <img src={Fs5.src} style={contentStyle}></img>
+                                </div>
+                            </Carousel>
+                        </div>
+                        <div className="upper-right-2">
+                            <span className={dohyeon.className}>
+                                TCP 파일 전송 프로그램입니다.
+                                <br/><br/>
+                                하나의 서버를 파일 전송 서버로 사용하며, 이 프로그램이 해당 서버를 이용하는 클라이언트 역할을 합니다.
+                                <br/><br/>
+                                디렉토리를 이동해서 파일을 올릴 시 해당 디렉토리에 파일이 저장되며, 
+                                저장된 파일은 더블클릭해서 다운로드가 가능합니다.
+                                <br/><br/>
+                                TCP 파일 전송 로직은 <Link href="https://github.com/lborg019/rust-tcp-file-transfer">rust-tcp-file-transfer</Link>를 참조했습니다.
+                            </span>
+                        </div>
+                    </div>
+                    <div className="lower">
+                        <div className="image-wrap">
+                            <img src={Rust.src}/>
+                        </div>
+                        <div className="image-wrap">
+                            <img src={Tauri.src} width="50px"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="project-wrap" id="cucumber">
                 <h1 className={dohyeon.className}>
                     <span className="title-head">C</span>ucumber
@@ -495,7 +549,7 @@ export default function SideProjects() {
                 .upper {
                     display:flex;
                 }
-                .upper-left{
+                .upper-left {
                     height: 50vh;
                     width: 40vw;
                     border: 3px solid #A0D8B3;
@@ -511,6 +565,24 @@ export default function SideProjects() {
                     font-size: 15 px;
                     color: #444;
                 }
+
+                .upper-left-2 {
+                    height: 50vh;
+                    width: 30.4vw;
+                    border: 3px solid #A0D8B3;
+                    display: block;
+                }
+                .upper-right-2 {
+                    width: 40.8vw;
+                    margin-left: 1.5vw;
+                    border: 1px solid #A0D8B3;
+                    border-radius: 8px;
+                    background: #E6F9EC;
+                    padding: 2vh 2vw;
+                    font-size: 15 px;
+                    color: #444;
+                }
+
                 .lower {
                     margin-top: 2vh;
                     height: 25vh;
