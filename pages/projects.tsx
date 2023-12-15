@@ -50,6 +50,7 @@ const dohyeon = Do_Hyeon({
 
 const contentStyle: React.CSSProperties = {
     margin: 0,
+    width: '100%',
     height: '50vh',
     color: '#fff',
     lineHeight: '50vh',

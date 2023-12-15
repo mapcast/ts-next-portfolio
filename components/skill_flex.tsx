@@ -21,15 +21,14 @@ function SkillItem({ skill, setModalIsOpen, setModalContent }: {skill: Skill, se
                 }
                 .skills-item {
                     border: 1px solid #AAA;
-                    border-radius: 100%;
-                    width:100%;
+                    border-radius: 25%;
+                    width: 150px;
                     height:100%;
                     cursor: pointer;
                     background: linear-gradient(#EEE, #CCC);
-                    display: flex;
                 }
                 .skills-item:hover {
-                    background: #CCC;
+                    background: linear-gradient(#FFF, #DDD);
                 }
                 img {
                     position: relative;
@@ -53,9 +52,8 @@ export default function SkillFlex({ skills, setModalIsOpen, setModalContent }: {
             <style jsx>{`
                 .skills-flex {
                     margin-top: 40px;
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                     height: 18%;
                 }
             `}</style>
